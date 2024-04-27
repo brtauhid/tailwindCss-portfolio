@@ -132,3 +132,83 @@ ScrollReveal().reveal(".laravel", {
   reset: true,
   delay:1200
 });
+ScrollReveal().reveal(".check-portfolio", {
+  duration: 1000, 
+  distance: "50px", 
+  easing: "ease-in-out", 
+  origin: "bottom",
+  reset: true,
+  delay:1200
+});
+ScrollReveal().reveal(".tubekarma", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "right",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-2", {
+  duration: 1000, 
+  distance: "350px", 
+  easing: "ease-out", 
+  origin: "bottom",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-3", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "left",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-4", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "bottom",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-5", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "left",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-6", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "right",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-7", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "top",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-8", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "right",
+  reset: true,
+  delay:500
+});
+ScrollReveal().reveal(".portfolio-9", {
+  duration: 1000, 
+  distance: "550px", 
+  easing: "ease-out", 
+  origin: "left",
+  reset: true,
+  delay:500
+});
