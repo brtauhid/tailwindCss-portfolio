@@ -1,0 +1,772 @@
+<!doctype html>
+<html id="mode-toggle" class="scroll-smooth dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Al Shamim - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/fabicon.webp">
+    <link href="/output/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YY5P19SZG5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YY5P19SZG5');
+    </script>
+    
+</head>
+
+<body class="bg-white dark:bg-slate-950">
+<!-- Header Section -->
+    <header class="py-2 md:py-3 lg:py-4 sticky top-0 bg-white/70 dark:bg-slate-950/70 z-50 shadow-2xl shadow-slate-300/40 dark:shadow-slate-900/40 backdrop-blur border-b border-slate-300/50 dark:border-slate-50/[0.05]">
+        <div class="flex-wrap container mx-auto w-[90%] xl:w-4/5 flex align-middle items-center justify-between">
+            <div class="logo">
+                <a href="/" class="text-slate-950 dark:text-white uppercase font-bold tracking-widest text-xl lg:text-2xl xl:text-3xl mt-[2px] -mb-1 block">Shamim</a>
+            </div>
+            <div class="flex align-middle items-center">
+                <!-- Dark & Light Mode Button for Mobile device -->
+                <button id="theme-toggle2" class="block lg:hidden bg-slate-300/60 text-indigo-700 dark:bg-slate-800/70 dark:text-slate-200 rounded-full text-sm p-1.5 mr-3">
+                    <svg id="theme-toggle-dark-icon2" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon2" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <!-- Hamburger Menu Button -->
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center text-base rounded-lg lg:hidden text-slate-950 dark:text-white" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto" id="mobile-menu-2">
+                <ul class="flex-col font-medium lg:flex-row text-slate-950 dark:text-white flex align-middle lg:items-center lg:gap-x-6 xl:gap-x-8 md:text-base lg:text-lg xl:text-xl">
+                    <li><a href="/" class="pt-2 pb-1 lg:pt-0 lg:pb-0 hover:text-[#FCA61F] transition border-b border-gray-400 dark:border-gray-700 lg:border-b-0 block">Home</a></li>
+                    <li><a href="/#about_me" class="pt-2 pb-1 lg:pt-0 lg:pb-0 hover:text-[#FCA61F] transition border-b border-gray-400 dark:border-gray-700 lg:border-b-0 block">About</a></li>
+                    <li><a href="/#services" class="pt-2 pb-1 lg:pt-0 lg:pb-0 hover:text-[#FCA61F] transition border-b border-gray-400 dark:border-gray-700 lg:border-b-0 block">Services</a></li>
+                    <li><a href="/#portfolios" class="pt-2 pb-1 lg:pt-0 lg:pb-0 hover:text-[#FCA61F] transition border-b border-gray-400 dark:border-gray-700 lg:border-b-0 block">Portfolio</a></li>
+                    <li><a href="/#testimonials" class="pt-2 pb-1 lg:pt-0 lg:pb-0 hover:text-[#FCA61F] transition border-b border-gray-400 dark:border-gray-700 lg:border-b-0 block">Testimonial</a></li>
+                    <li><a href="/#contact" class="pt-2 pb-1 md:text-slate-950 lg:text-white lg:dark:text-white lg:pt-3 lg:pb-3 lg:bg-gradient-to-r from-blue-600 to-blue-800 lg:rounded-full lg:px-6 border-b border-gray-400 dark:border-gray-700 lg:border-b-0 block">Contact</a></li>
+                    <!-- Dark & Light Mode Button -->
+                    <button id="theme-toggle" class="hidden lg:block bg-slate-300/60 text-indigo-700 dark:bg-slate-800/70 dark:text-slate-200 rounded-full text-sm p-2 -ml-2">
+                        <svg id="theme-toggle-dark-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </ul>
+                <div class="block lg:hidden">
+                    <div class="flex text-white gap-2 mt-4 mb-2">
+                        <a href="https://wa.link/ohdalu" target="_blank">
+                            <div class="p-2 bg-blue-gradient rounded-full">
+                                <img src="./images/whatsapp.webp" class="w-4" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdullahalshamim" target="_blank">
+                            <div class="p-2 bg-blue-gradient rounded-full">
+                                <img src="./images/linkedin.webp" class="w-4" alt="">
+                            </div>
+                        </a>
+                        <a href="https://github.com/abshamim" target="_blank">
+                            <div class="p-2 bg-blue-gradient rounded-full">
+                                <img src="./images/github.webp" class="w-4" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/AbdullahAlShamim30" target="_blank">
+                            <div class="p-2 bg-blue-gradient rounded-full">
+                                <img src="./images/facebook.webp" class="w-4" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Banner Section -->
+    <section id="header" class="-mt-10 -mb-16 md:-mb-20 lg:-mb-28">
+        <div class="container mx-auto w-[90%] xl:w-4/5 flex flex-col gap-y-6 md:gap-y-0 md:flex md:flex-row justify-center md:justify-between items-center h-screen">
+            <div class="relative banner-text text-center md:text-left space-y-1 md:space-y-2 xl:space-y-4 order-2 md:order-1 md:w-3/5">
+                <!-- Gradient Part -->
+                <div class="absolute top-1/2 left-1/2 md:left-0 transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 w-full -z-10">
+                    <div class="h-72 opacity-20 md:opacity-30 rounded-full bg-gradient-to-r from-blue-600 to-blue-600 md:to-transparent blur-2xl dark:blur-3xl"></div>
+                </div>
+                <!-- Gradient Part -->
+                <h2 class="hello-text text-slate-950 dark:text-white text-xl lg:text-[26px] xl:text-3xl lg:pb-3 xl:pb-0">Hello, <span class="iam">I Am</span></h2>
+                <h1 id="banner-name" class="brand-yellow text-2xl md:text-3xl lg:text-[43px] xl:text-5xl font-bold uppercase">Abdullah Al Shamim</h1>
+                <p class="banner-slogan text-slate-800 dark:text-gray-200 text-base md:text-lg lg:text-xl">A Professional Web Application Developer based on PHP</p>
+                <div class="banner-links pt-4">
+                    <a href="/#contact" class="btn-hire bg-blue-gradient py-2 px-5 md:py-4 md:px-8 rounded-full text-base md:text-lg lg:text-xl text-white mr-2 lg:mr-4">Hire Me</a>
+                    <a href="/#portfolios" class="btn-showcase text-white bg-slate-800 py-2 px-5 md:py-4 md:px-8 rounded-full border border-slate-600 text-base md:text-lg lg:text-xl">Showcase</a>
+                </div>
+            </div>
+            <div class="banner-img order-1 md:order-2 md:w-2/5">
+                <img class="banner-img w-2/3 mx-auto md:w-full" src="./images/banner-img.webp" alt="">
+            </div>
+        </div>
+    </section>
+<!-- About Section -->
+    <section id="about_me" class="pt-16 md:pt-20 lg:pt-28">
+        <div class="title-area text-center mx-auto px-4">
+            <h2 class="brand-yellow text-xs md:text-base lg:text-xl">About Me</h2>
+            <h1 class="text-slate-950 dark:text-white text-2xl md:text-3xl lg:text-[43px] xl:text-5xl font-bold mt-2 lg:mt-5">Education & Skills</h1>
+        </div>
+        <div class="container mx-auto w-[90%] xl:w-4/5 md:flex items-center mt-7 md:mt-10 lg:mt-14">
+            <div class="education-part relative text-white w-full md:w-2/6">
+                <!-- Gradient Part -->
+                <div class="grid h-max top-1/2 transform -translate-y-1/2 w-full absolute -z-10">
+                    <div class="grid grid-cols-2 opacity-80">
+                        <div class="h-40 rounded-full bg-gradient-to-l from-blue-600 to-transparent -mr-20 blur-3xl"></div>
+                        <div class="h-40 rounded-full bg-gradient-to-r from-blue-600 to-transparent -ml-20 blur-3xl"></div>
+                    </div>
+                </div>
+                <!-- Gradient Part -->
+                <div class="bg-gray-300/40 dark:bg-gray-900/70 rounded-tl-2xl rounded-tr-2xl border-b border-gray-400/70 dark:border-gray-800 py-5">
+                    <span class="brand-bg-yellow text-xs lg:text-sm text-gray-900 pt-1 pb-0.5 pl-1.5 pr-2 rounded-tr-full rounded-br-full">2019-2023</span>
+                    <div class="px-4 sm:px-5 mt-2.5">
+                        <h2 class="text-base lg:text-lg font-bold text-slate-950 dark:text-white">BA Honours</h2>
+                        <h3 class="text-sm lg:text-base font-light text-slate-950 dark:text-white">Jagannath University</h3>
+                    </div>
+                </div>
+                <div class="bg-gray-300/40 dark:bg-gray-900/70 border-b border-gray-400/70 dark:border-gray-800 py-5">
+                    <span class="brand-bg-yellow text-xs lg:text-sm text-gray-900 pt-1 pb-0.5 pl-1.5 pr-2 rounded-tr-full rounded-br-full">2018-2019</span>
+                    <div class="px-4 sm:px-5 mt-2.5">
+                        <h2 class="text-base lg:text-lg font-bold text-slate-950 dark:text-white">Responsive Web Design</h2>
+                        <h3 class="text-sm lg:text-base font-light text-slate-950 dark:text-white">Creative IT Institute</h3>
+                    </div>
+                </div>
+                <div class="bg-gray-300/40 dark:bg-gray-900/70 rounded-bl-2xl rounded-br-2xl py-5">
+                    <span class="brand-bg-yellow text-xs lg:text-sm text-gray-900 pt-1 pb-0.5 pl-1.5 pr-2 rounded-tr-full rounded-br-full">2022-2023</span>
+                    <div class="px-4 sm:px-5 mt-2.5">
+                        <h2 class="text-base lg:text-lg font-bold text-slate-950 dark:text-white">Web Development (Laravel & Vue)</h2>
+                        <h3 class="text-sm lg:text-base font-light text-slate-950 dark:text-white">RR-Foundation</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="text-slate-950 dark:text-white w-full md:w-4/6 md:ml-10 lg:ml-14 xl:ml-20 mt-7 md:mt-0">
+                <h2 class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold">My Skills</h2>
+                <p class="mt-3 text-lg lg:text-lg xl:text-xl text-gray-700 dark:text-gray-400">I'm crazy about Web Development. I love to develop and design websites using WordPress or Laravel & Vue. Not only build websites but also seek to make good relationships with clients. I will take my client's project too seriously because, after all, we both will be benefited from this.</p>
+                <div class="mt-7 md:mt-10 lg:mt-14">
+                    <h2 class="uppercase text-sm lg:text-base font-bold">PHP & OOP</h2>
+                    <div class="my-2.5 over">
+                        <div class="bg-gray-300/70 dark:bg-gray-900 relative h-[10px] w-full rounded-2xl">
+                            <div class="bg-blue-gradient absolute top-0 left-0 h-full w-[75%] rounded-2xl">
+                                <span class="bg-blue-gradient absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                    <span class="bg-blue-700 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h2 class="uppercase text-sm lg:text-base font-bold">Tailwind CSS & Bootstrap</h2>
+                    <div class="my-2.5">
+                        <div class="bg-gray-300/70 dark:bg-gray-900 relative h-[10px] w-full rounded-2xl">
+                            <div class="bg-blue-gradient absolute top-0 left-0 h-full w-[85%] rounded-2xl">
+                                <span class="bg-blue-gradient absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                    <span class="bg-blue-700 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h2 class="uppercase text-sm lg:text-base font-bold">WordPress Cms</h2>
+                    <div class="my-2.5">
+                        <div class="bg-gray-300/70 dark:bg-gray-900 relative h-[10px] w-full rounded-2xl">
+                            <div class="bg-blue-gradient absolute top-0 left-0 h-full w-[90%] rounded-2xl">
+                                <span class="bg-blue-gradient absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                    <span class="bg-blue-700 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h2 class="uppercase text-sm lg:text-base font-bold">Elementor Page Builder</h2>
+                    <div class="my-2.5">
+                        <div class="bg-gray-300/70 dark:bg-gray-900 relative h-[10px] w-full rounded-2xl">
+                            <div class="bg-blue-gradient absolute top-0 left-0 h-full w-[98%] rounded-2xl">
+                                <span class="bg-blue-gradient absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                    <span class="bg-blue-700 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h2 class="uppercase text-sm lg:text-base font-bold">Vue Js</h2>
+                    <div class="my-2.5">
+                        <div class="bg-gray-300/70 dark:bg-gray-900 relative h-[10px] w-full rounded-2xl">
+                            <div class="bg-blue-gradient absolute top-0 left-0 h-full w-[60%] rounded-2xl">
+                                <span class="bg-blue-gradient absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                    <span class="bg-blue-700 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h2 class="uppercase text-sm lg:text-base font-bold">Laravel</h2>
+                    <div class="my-2.5">
+                        <div class="bg-gray-300/70 dark:bg-gray-900 relative h-[10px] w-full rounded-2xl">
+                            <div class="bg-blue-gradient absolute top-0 left-0 h-full w-[60%] rounded-2xl">
+                                <span class="bg-blue-gradient absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                    <span class="bg-blue-700 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Services Section -->
+    <section id="services" class="pt-16 md:pt-20 lg:pt-28">
+        <div class="title-area w-full lg:w-[550px] text-center mx-auto px-4">
+            <h2 class="brand-yellow text-xs md:text-base lg:text-xl">My Expertise</h2>
+            <h1 class="text-slate-950 dark:text-white text-2xl md:text-3xl lg:text-[43px] xl:text-5xl font-bold mt-2 lg:mt-5">Provide Wide Range of Web Services</h1>
+        </div>
+        <div class="container mx-auto w-[90%] xl:w-4/5">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 mt-7 md:mt-10 lg:mt-14">
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-3 sm:gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <img class="w-12 sm:w-14" src="./images/wordpress.svg" alt="" width="512" height="512">
+                        <div>
+                            <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white">WordPress Customization</h4>
+                            <p class="mt-2 lg:mt-3 text-gray-700 dark:text-gray-400 text-sm sm:text-base">I'm a professional WordPress developer. I can build dynamic WordPress websites in any requirement. I have been experienced more than three years in advanced customizations, ACF, CPT, Woocommerce, Multivendor model, Booking, Membership and other advanced functionalities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-3 sm:gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <img class="w-12 sm:w-14" src="./images/bug.webp" alt="" width="512" height="512">
+                        <div>
+                            <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white">WordPress Bug Fixing</h4>
+                            <p class="mt-2 lg:mt-3 text-gray-700 dark:text-gray-400 text-sm sm:text-base">There are so many WordPress website in web, that's needs to be fix simple or major issues, like Speed Optimization, Fatal error, Plugins conflict, Function damage etc. If you face this kind of issues on your website, this can be destroy your online business. If you want to fix, you can simply contact with me.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-3 sm:gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <img class="w-12 sm:w-14" src="./images/elementor.webp" alt="" width="512" height="512">
+                        <div>
+                            <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white">PSD/FIGMA to Elementor</h4>
+                            <p class="mt-2 lg:mt-3 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Elementor Page Builder is a user friendly page builder for WordPress development. 90% of clients wants to build their WordPress website by using Elementor. This is light-weight and easy to use. I'm strongly familier with Elementor. I can convert your PSD/FIGMA design to dynamic website!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-3 sm:gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <img class="w-12 sm:w-14" src="./images/tailwind.svg" alt="" width="512" height="512">
+                        <div>
+                            <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white">PSD/FIGMA to Tailwind CSS</h4>
+                            <p class="mt-2 lg:mt-3 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Tailwind CSS is the most popular CSS Framework right now. Because, Tailwind CSS is faster & developer friendly. Developers can easily configure it into React, Vue or Laravel projects. If you want to convert your PSD/FIGMA design to Tailwind CSS, then I'm here for you!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-3 sm:gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <img class="w-12 sm:w-14" src="./images/vue.webp" alt="" width="512" height="512">
+                        <div>
+                            <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white">App Design using Vue.js</h4>
+                            <p class="mt-2 lg:mt-3 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Vue js is a JavaScript framework for frontend developement. As a PHP lover, I'm familier with Vue Js because I use Laravel to develop web applications. Mostly Vue is using with Laravel as a frontend for the best performance. So I can design your application using Vue Js.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-3 sm:gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <img class="w-12 sm:w-14" src="./images/laravel.webp" alt="" width="512" height="512">
+                        <div>
+                            <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white">Laravel Development</h4>
+                            <p class="mt-2 lg:mt-3 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Laravel is one of the best backend solution for web application. Laravel uses PHP as their primary language so that Error handeling makes easier for developer. That's why developers are loves it! If you want to build your web app using Laravel, I can help you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Portfolio Section -->
+    <section id="portfolios" class="pt-16 md:pt-20 lg:pt-28">
+        <div class="title-area text-center mx-auto px-4">
+            <h2 class="brand-yellow text-xs md:text-base lg:text-xl">Creative Works</h2>
+            <h1 class="text-slate-950 dark:text-white text-2xl md:text-3xl lg:text-[43px] xl:text-5xl font-bold mt-2 lg:mt-5">Check My Portfolio</h1>
+        </div>
+        <div class="container mx-auto w-[90%] xl:w-4/5">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 mt-7 md:mt-10 lg:mt-14">
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://www.tubekarma.com/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/tubekarma.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://www.tubekarma.com/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Tubekarma</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://stcharbel.com.au/forklift/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/froklifts.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://stcharbel.com.au/forklift/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Froklifts</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://escrappy.ae/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/escrappy.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://escrappy.ae/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Escrappy</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">PSD to Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://denuinc.com/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/denu.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://denuinc.com/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Denuinc</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">XD to Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://eatsbroker.com/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/eatsbroker.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://eatsbroker.com/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Eats Broker</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://homenterior.com/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/homenterior.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://homenterior.com/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Homenterior</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://dreamlifeabroad.com/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/dreamlife.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://dreamlifeabroad.com/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Dream Life Abroad</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Figma to Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://ledlife.dk/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/ledlife.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://ledlife.dk/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">LED Life</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                    <div class="relative flex h-full flex-col gap-5 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6">
+                        <a href="https://peterbraun.at/" target="_blank">
+                            <div class="h-44 sm:h-64 rounded-xl bg-cover bg-top hover:bg-bottom transition-all ease-in-out duration-[4.5s]" style="background-image: url('./images/peter.webp');"></div>
+                        </a>
+                        <div>
+                            <a href="https://peterbraun.at/" target="_blank">
+                                <h4 class="text-lg lg:text-xl font-semibold text-slate-950 dark:text-white hover:underline">Peter Braun</h4>
+                            </a>
+                            <p class="mt-1 text-gray-700 dark:text-gray-400 text-sm sm:text-base">Elementor, WordPress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Testimonial Section -->
+    <section id="testimonials" class="pt-16 md:pt-20 lg:pt-28">
+        <div class="title-area text-center mx-auto px-4">
+            <h2 class="brand-yellow text-xs md:text-base lg:text-xl">Testimonials</h2>
+            <h1 class="text-slate-950 dark:text-white text-2xl md:text-3xl lg:text-[43px] xl:text-5xl font-bold mt-2 lg:mt-5">Happy Clients Feedback</h1>
+        </div>
+        <div class="container mx-auto w-[90%] xl:w-4/5">
+            <div class="mt-7 md:mt-10 lg:mt-14 grid gap-4 lg:gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                <div class="space-y-4 lg:space-y-6">
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/stewartdd.webp" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Stewartdd</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">Fiverr's Client</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">Very nice methodology of working. Sounded confident from the very beginning and fully delivered on his words. I will continue to hire for all of my site needs. A pleasure to work with Abdullah.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/peterbraun.jpeg" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Peter Braun</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">Founding at Peter Braun</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">We needed in a very short time website and I have to say I am very pleased working with Abdullah. THe is very reliable, responds very quickly and has delivered a perfect website for us. He also managed the upload at our German Webhost perfectly and without any problems and fixed all text and pics errors, which we had discovered later. I am looking forward to working together in future when we do a relaunch of our website.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/bindsi.webp" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Bindsi</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">Upwork's Client</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">Very good communication and good understand about work. Highly recommended!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4 lg:space-y-6 md:hidden xl:block">
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/maddox.webp" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Dominique Maddox</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">CEO - Eats Broker</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">Abdullah was very understanding of the changes I was trying to make on my website. He beat my timeline to get my website redesigned and went above and beyond the call of duty. I'm a demanding client and he was able to have guide me through the process. He would work into the morning hours of his local time to help me with an issue or answer a question. I will be working with him again in the future.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/abubokor.jpeg" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Abu Bokor Siddik</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">Linkedin's Client</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">Abdullah is a very "Skilled and Talented" web developer. He is pleasant to work with and shows great promise. I already completed lots of projects with him. Every time he helped me. I am really happy to work with Abdullah. Thank you so much. Highly recommended.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/adriana.jpeg" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Adriana Peralta</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">CEO - Dream Life Abroad</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">I have worked with Abdullah on multiple projects. He continues to be reliable, easy to communicate with and always does great work!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4 lg:space-y-6">
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/risvi.webp" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Risvi Ahmed</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">CEO - Creative Flax</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">Abdullah worked on many of my projects and always delivered excellent work. He is experienced, knowledgeable and easy to work with. If you’re looking for someone experienced and reliable, then Abdullah is the perfect person for you. Thanks for all your great work.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/suraj.webp" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Suraj Kumar</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">CEO - Escrappy</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">I was seeking a professional web developer to built my much needed website quickly. Previously I hired 2 developers but they couldn't completed tasks. Then I found Abdullah. Hi did great job! More than my expectation. He is very humble and professional. A pleasure to work with him.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-gradient-to-b from-blue-800/90 to-white dark:from-gray-700 dark:via-gray-800 dark:to-darker p-px">
+                        <div class="relative flex h-full flex-col gap-4 rounded-2xl bg-gray-200 dark:bg-gray-900 p-4 sm:p-5 md:p-6 overflow-hidden">
+                            <img class="absolute w-14 top-4 opacity-40 right-4" src="./images/quotation.png" alt="">
+                            <div class="flex items-center gap-4">
+                                <img class="h-12 w-12 rounded-full" src="./images/brian.jpeg" alt="user avatar">
+                                <div>
+                                    <h3 class="text-base lg:text-lg font-medium text-slate-950 dark:text-white leading-tight">Brian Dam</h3>
+                                    <div class="grid grid-cols-5 w-fit gap-1 mb-1.5">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                        <img class="w-3" src="./images/star.webp" alt="">
+                                    </div>
+                                    <p class="text-xs lg:text-sm text-gray-600 dark:text-gray-300">Founder at Led Life</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-400 text-sm sm:text-base">Abdullah did a great job. Understood the job perfectly and did it without much need for input - great and time saving. We'll use him again for the next projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+    <section id="contact" class="pt-16 md:pt-20 lg:pt-28">
+        <div class="title-area text-center mx-auto px-4">
+            <h2 class="brand-yellow text-xs md:text-base lg:text-xl">Get in Touch</h2>
+            <h1 class="text-slate-950 dark:text-white mx-auto w-full lg:w-[550px] text-2xl md:text-3xl lg:text-[43px] xl:text-5xl font-bold mt-2 lg:mt-5">Any Questions? Feel Free to Contact</h1>
+        </div>
+        <div class="container mx-auto w-[90%] xl:w-4/5 mt-7 md:mt-10 lg:mt-14">
+            <div class="md:flex items-center gap-6">
+                <div class="relative text-white md:w-3/6 lg:w-2/6">
+                    <!-- Gradient Section -->
+                    <div class="absolute h-max top-1/2 transform -translate-y-1/2 w-full -z-10">
+                        <div class="grid grid-cols-2 opacity-80">
+                            <div class="h-40 rounded-full bg-gradient-to-l from-blue-600 to-transparent -mr-20 blur-3xl"></div>
+                            <div class="h-40 rounded-full bg-gradient-to-r from-blue-600 to-transparent -ml-20 blur-3xl"></div>
+                        </div>
+                    </div>
+                    <!-- Gradient Section -->
+                    <div class="bg-gray-300/40 dark:bg-gray-900/70 rounded-tl-2xl rounded-tr-2xl border-b border-gray-400/70 dark:border-gray-800 p-4 sm:p-5 md:p-6">
+                        <div class="flex items-center gap-4">
+                            <div class="p-2 md:p-3 bg-blue-gradient rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 md:w-6 lg:w-7 h-5 md:h-6 lg:h-7">
+                                    <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h3 class="text-base lg:text-lg font-bold brand-yellow">Address:</h3>
+                                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300">Vicoria Park, Old Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-300/40 dark:bg-gray-900/70 border-b border-gray-400/70 dark:border-gray-800 p-4 sm:p-5 md:p-6">
+                        <div class="flex items-center gap-4">
+                            <div class="p-2 md:p-3 bg-blue-gradient rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 md:w-6 lg:w-7 h-5 md:h-6 lg:h-7">
+                                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/>
+                                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/>
+                                </svg>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h3 class="text-base lg:text-lg font-bold brand-yellow">Email:</h3>
+                                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300">
+                                    <a href="mailto:shamimabdullah30@gmail.com">shamimabdullah30@gmail.com</a>
+                                </p>
+                                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300">
+                                    <a href="mailto:sda.hosain@gmail.com">sda.hosain@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-300/40 dark:bg-gray-900/70 rounded-bl-2xl rounded-br-2xl p-4 sm:p-5 md:p-6">
+                        <div class="flex items-center gap-4">
+                            <div class="p-2 md:p-3 bg-blue-gradient rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 md:w-6 lg:w-7 h-5 md:h-6 lg:h-7">
+                                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h3 class="text-base lg:text-lg font-bold brand-yellow">Phone:</h3>
+                                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300">
+                                    <a href="tel:+8801797475729">+880 1797-475729</a>
+                                </p>
+                                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300">
+                                    <a href="tel:+8801624315446">+880 1624-315446</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-3/6 lg:w-4/6 md:ml-0 lg:ml-14 mt-7 md:mt-0">
+                    <form action="https://formcarry.com/s/WB3abnUyou" class="w-full grid gap-3 md:gap-4 lg:gap-5" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Full Name" class="w-full rounded-full border border-gray-300 dark:border-gray-800 bg-gray-200 dark:bg-gray-900 py-3 px-5 md:py-4 md:px-6 text-sm lg:text-base font-medium text-slate-950 dark:text-white outline-none focus:border-[#FCA61F]/60 focus:shadow-md"/>
+                        <input type="email" name="email" id="email" placeholder="Email Address" class="w-full rounded-full border border-gray-300 dark:border-gray-800 bg-gray-200 dark:bg-gray-900 py-3 px-5 md:py-4 md:px-6 text-sm lg:text-base font-medium text-slate-950 dark:text-white outline-none focus:border-[#FCA61F]/60 focus:shadow-md"/>
+                        <input type="text" name="subject" id="subject" placeholder="Enter your subject" class="w-full rounded-full border border-gray-300 dark:border-gray-800 bg-gray-200 dark:bg-gray-900 py-3 px-5 md:py-4 md:px-6 text-sm lg:text-base font-medium text-slate-950 dark:text-white outline-none focus:border-[#FCA61F]/60 focus:shadow-md"/>
+                        <textarea rows="4" name="message" id="message" placeholder="Type your message" class="w-full rounded-3xl resize-none border border-gray-300 dark:border-gray-800 bg-gray-200 dark:bg-gray-900 py-3 px-5 md:py-4 md:px-6 text-sm lg:text-base font-medium text-slate-950 dark:text-white outline-none focus:border-[#FCA61F]/60 focus:shadow-md"></textarea>
+                        <div>
+                            <button class="leading-tight font-bold text-white bg-blue-gradient py-2 px-5 md:py-3 md:px-8 rounded-full text-base md:text-lg lg:text-xl">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer Section -->
+    <section class="mt-16 md:mt-20 lg:mt-28">
+        <div class="relative container text-center mx-auto w-[90%] xl:w-4/5 py-6">
+            <div class="grid h-max inset-0 w-full absolute -z-10">
+                <div class="block my-auto">
+                    <div class="grid grid-cols-2 opacity-20">
+                        <div class="h-40 rounded-full bg-gradient-to-l from-blue-600 to-transparent -mr-20 blur-2xl"></div>
+                        <div class="h-40 rounded-full bg-gradient-to-r from-blue-600 to-transparent -ml-20 blur-2xl"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/" class="text-slate-950 dark:text-white uppercase font-bold tracking-widest text-2xl xl:text-3xl mt-[2px] -mb-1 block">Shamim</a>
+            </div>
+            <nav class="navbar my-6">
+                <ul class="text-slate-950 dark:text-white justify-center sm:flex align-middle text-base lg:text-lg font-normal">
+                    <li><a href="/" class="hover:text-[#FCA61F] transition sm:border-r border-gray-700 dark:border-white px-2 lg:px-4 block sm:inline mb-1 sm:mb-0">Home</a></li>
+                    <li><a href="/#about_me" class="hover:text-[#FCA61F] transition sm:border-r border-gray-700 dark:border-white px-2 lg:px-4 block sm:inline mb-1 sm:mb-0">About</a></li>
+                    <li><a href="/#services" class="hover:text-[#FCA61F] transition sm:border-r border-gray-700 dark:border-white px-2 lg:px-4 block sm:inline mb-1 sm:mb-0">Services</a></li>
+                    <li><a href="/#portfolios" class="hover:text-[#FCA61F] transition sm:border-r border-gray-700 dark:border-white px-2 lg:px-4 block sm:inline mb-1 sm:mb-0">Portfolio</a></li>
+                    <li><a href="/#testimonials" class="hover:text-[#FCA61F] transition sm:border-r border-gray-700 dark:border-white px-2 lg:px-4 block sm:inline mb-1 sm:mb-0">Testimonial</a></li>
+                    <li><a href="/#contact" class="hover:text-[#FCA61F] transition px-2 lg:px-4 block sm:inline mb-1 sm:mb-0">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="flex justify-center text-white gap-2 md:gap-3">
+                <a href="https://wa.link/ohdalu" target="_blank">
+                    <div class="p-2 bg-blue-gradient rounded-full">
+                        <img src="./images/whatsapp.webp" class="w-4 md:w-5" alt="">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/abdullahalshamim" target="_blank">
+                    <div class="p-2 bg-blue-gradient rounded-full">
+                        <img src="./images/linkedin.webp" class="w-4 md:w-5" alt="">
+                    </div>
+                </a>
+                <a href="https://github.com/abshamim" target="_blank">
+                    <div class="p-2 bg-blue-gradient rounded-full">
+                        <img src="./images/github.webp" class="w-4 md:w-5" alt="">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/AbdullahAlShamim30" target="_blank">
+                    <div class="p-2 bg-blue-gradient rounded-full">
+                        <img src="./images/facebook.webp" class="w-4 md:w-5" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto w-[90%] xl:w-4/5 h-1 border-b border-slate-400 dark:border-slate-800">
+        </div>
+        <div class="container text-center mx-auto w-[90%] xl:w-4/5 text-white">
+            <p class="pt-4 pb-3 sm:pt-6 sm:pb-5 text-xs sm:text-sm md:text-base text-slate-950 dark:text-white">Copyright © SHAMIM 2023 | All rights reserved</p>
+            <a class="text-center mx-auto inline-block" href="#header">
+                <div class="p-2 sm:p-[10px] bg-gradient-to-r from-yellow-600 to-yellow-700 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 sm:w-5 sm:h-5">
+                        <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <script src="./script.js" type="module"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="20c73dbc-b326-4d9a-b2e1-60e9f5f92dbe";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/scrollReveal.js"></script>
+
+
+</body>
+</html>

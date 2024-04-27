@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.4"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./output/style.css --minify --watch",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
+  }
+}

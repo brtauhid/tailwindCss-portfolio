@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.brand-yellow{
+    @apply text-[#FCA61F];
+}
+.brand-bg-yellow{
+    @apply bg-[#FCA61F];
+}
+.bg-blue-gradient{
+    @apply bg-gradient-to-r from-blue-600 to-blue-800;
+}
